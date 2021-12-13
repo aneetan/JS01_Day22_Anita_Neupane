@@ -1,0 +1,40 @@
+<!-- Visualize all the javascript built-in errors and pass your own default error message to JavaScript built-in errors.
+Also, make your own custom Exception and used it for handling any errors. --> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Errors in javascript</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    const person = {
+        name : 'XYZ',
+        age  : 14
+    }
+
+    function canVote (p) {
+        
+        if (p.age < 18 ) {
+            throw new Error('Person is under the age of voting');
+        } else {
+            console.log (`${p.name} can vote`);
+        }
+    }
+
+    try {
+        canVote(person);
+    } catch (e) {
+        console.log('Something went wrong!');
+
+        console.error(e);
+    }
+
+     
+</script>
+</html>

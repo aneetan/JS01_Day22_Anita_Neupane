@@ -1,0 +1,33 @@
+  <!-- build a TODO List Application that hss the function that has the functionality of:
+ - adding new todo 
+ - deleting todo 
+ - listing all todos
+ by making use of higher order functions such as (map, filter); and DOM techniques.
+ (To persist TODO list data, you can make use of localStorage API.) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TODO List Application</title>
+    <link rel="stylesheet" href="task1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <div class="container">
+        <h2> TODO App</h2>
+        <div class="inputField" id="inputList">
+            <input type="text" placeholder="Enter your new TODO">
+        <button onclick="addTodo(event)"><i class="fas fa-plus"></i></button></div>
+         <ul class="todoList" >
+
+         </ul>
+         <div class="footer">
+             <span> You've <span class="pending" ></span> pending task.</span>
+              <button> Clear All </button>
+         </div>
+</body>
+<script src="task1.js"></script>
+</html>
